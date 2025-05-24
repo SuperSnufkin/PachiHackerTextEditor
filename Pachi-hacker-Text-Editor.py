@@ -60,7 +60,7 @@ class HackerEditor(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Pachi Hacker-Text-Editor")
-        self.resize(900, 600)
+        self.resize(1150, 600)
 
         # Pestañas
         self.tabs = QTabWidget()
@@ -77,7 +77,7 @@ class HackerEditor(QMainWindow):
 
     def _init_ui(self):
         toolbar = QToolBar(self)
-        toolbar.setStyleSheet("background-color: #111;")
+        toolbar.setStyleSheet("background-color: #FFF;")
         self.addToolBar(toolbar)
 
         def mk(icon_name, text, slot, shortcut=None, checkable=False):
